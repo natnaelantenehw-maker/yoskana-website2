@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f9ccd9"/><stop offset="1" stop-color="#cfc6ee"/></linearGradient>
+    <radialGradient id="skin"><stop stop-color="#f3c8b2"/><stop offset="1" stop-color="#c98d78"/></radialGradient>
+  </defs>
+  <rect width="900" height="900" fill="url(#bg)"/>
+  <circle cx="720" cy="170" r="160" fill="#fff" opacity=".24"/>
+  <circle cx="520" cy="360" r="205" fill="url(#skin)"/>
+  <path d="M340 385c25-205 325-280 420-95 45 87-12 186-72 208-48-106-97-190-192-227-57 24-103 60-156 114Z" fill="#4c293b"/>
+  <path d="M410 470c-26 115-14 206 65 286h254c65-97 72-196 25-286-74 65-257 70-344 0Z" fill="#d39c8f"/>
+  <path d="M492 372c18 12 38 12 58 0" stroke="#6a3f3f" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M610 374c18 12 39 12 59 0" stroke="#6a3f3f" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M560 454c32 24 69 22 99-2" stroke="#9e465b" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <path d="M430 476c-36 22-68 57-89 104" stroke="#d39c8f" stroke-width="44" fill="none" stroke-linecap="round"/>
+  <circle cx="344" cy="586" r="31" fill="#d39c8f"/>
+  <g fill="#8b3d71" opacity=".9"><circle cx="810" cy="620" r="25"/><circle cx="845" cy="651" r="18"/><circle cx="782" cy="666" r="17"/><circle cx="818" cy="695" r="13"/></g>
+  <text x="55" y="850" fill="#6f4b5d" font-family="Arial" font-size="24">Replace this illustration with your Yoskana hero photo</text>
+</svg>
