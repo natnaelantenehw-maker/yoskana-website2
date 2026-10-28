@@ -1,0 +1,183 @@
+
+/* ==========================================
+   YOSKANA — CONTACT PAGE STYLES
+========================================== */
+
+/* APPOINTMENTS — HERO LABEL */
+.page-hero .eyebrow {
+    color: #2F5942;
+}
+
+/* GET IN TOUCH — SECTION LABEL */
+.contact-card .eyebrow {
+    color: #2F5942;
+}
+
+/* CONTACT INFORMATION LABELS */
+.contact-card .contact-list strong {
+    color: #2F5942;
+}
+
+/* APPOINTMENT FORM LABELS */
+.form-card .field label {
+    color: #2F5942;
+}
+
+/* FORM INPUT FOCUS COLORS */
+.form-card input:focus,
+.form-card select:focus,
+.form-card textarea:focus {
+    border-color: #2F5942;
+    outline-color: #2F5942;
+}
+
+/* REQUEST APPOINTMENT BUTTON */
+.form-card .btn-primary {
+    background: #2F5942;
+    border-color: #2F5942;
+    color: #FFFFFF;
+}
+
+    .form-card .btn-primary:hover {
+        background: #203D2F;
+        border-color: #203D2F;
+        color: #FFFFFF;
+    }
+
+/* ACTIVE BOOK NOW NAVIGATION */
+.nav-links a.nav-cta.active {
+    background: #2F5942;
+    border-color: #2F5942;
+    color: #FFFFFF;
+}
+
+/* ==========================================
+   CONTACT PAGE — HERO LAYOUT FIX
+========================================== */
+
+/* Reduce excessive spacing in the hero */
+.page-hero {
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+    /* Balance the heading and description */
+    .page-hero .page-hero-inner {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        align-items: center;
+        gap: 40px;
+    }
+
+    /* Keep heading from becoming too wide */
+    .page-hero .page-title {
+        max-width: 650px;
+        line-height: 1.05;
+    }
+
+    /* Position the description naturally */
+    .page-hero .page-hero-inner > p {
+        max-width: 460px;
+        margin: 0;
+        line-height: 1.8;
+    }
+
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+
+    .page-hero {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
+        .page-hero .page-hero-inner {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .page-hero .page-title {
+            max-width: 100%;
+        }
+
+        .page-hero .page-hero-inner > p {
+            max-width: 100%;
+        }
+}
+
+/* ==========================================
+   CONTACT PAGE — SIDE-BY-SIDE LAYOUT
+========================================== */
+
+.contact-booking-section {
+    padding: 75px 0 90px;
+    background: #FFFAF6;
+}
+
+.contact-booking-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 35px;
+    align-items: start;
+}
+
+/* LEFT SIDE */
+
+.contact-booking-left {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    min-width: 0;
+}
+
+.contact-heading .eyebrow {
+    color: #2F5942;
+}
+
+.contact-heading .page-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.05;
+}
+
+.contact-heading p {
+    max-width: 450px;
+    line-height: 1.8;
+}
+
+/* CONTACT INFORMATION CARD */
+
+.contact-booking-left .contact-card {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* RIGHT SIDE — FORM */
+
+.contact-booking-grid > .form-card {
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+/* TABLET AND MOBILE */
+
+@media (max-width: 900px) {
+
+    .contact-booking-section {
+        padding: 50px 0 65px;
+    }
+
+    .contact-booking-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .contact-booking-left {
+        gap: 25px;
+    }
+
+    .contact-heading .page-title {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}

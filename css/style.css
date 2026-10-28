@@ -5,20 +5,22 @@
    ROOT
 ========================================================= */
 
+
 :root {
     --cream: #fffaf6;
     --paper: #fffdf9;
-    --ink: #231018;
-    --wine: #391623;
-    --pink: #b84f79;
-    --pink-light: #ce628b;
-    --blush: #f8e7ed;
-    --lilac: #f2e8f3;
-    --peach: #fbefe7;
-    --muted: #75636b;
-    --line: #eadadd;
-    --shadow: 0 18px 50px rgba(52, 24, 37, 0.09);
+    --ink: #17281e;
+    --wine: #2F5942;
+    --pink: #2F5942;
+    --pink-light: #4e8064;
+    --blush: #edf3ec;
+    --lilac: #f1f4ec;
+    --peach: #f8f2e9;
+    --muted: #657168;
+    --line: #dce6dc;
+    --shadow: 0 18px 50px rgba(47, 89, 66, 0.09);
 }
+  
 
 
 /* =========================================================
@@ -2424,7 +2426,11 @@ textarea {
     border-bottom: 1px solid var(--line);
     scroll-margin-top: 100px;
 }
-
+.services-category-divider {
+    border-top: 2px solid #2F5942;
+    padding-top: 55px;
+    margin-top: 30px;
+}
 
 .treatment-row-reverse
 .treatment-image {
@@ -3074,4 +3080,448 @@ textarea {
     .services-consultation-card {
         padding: 42px 22px;
     }
+}
+
+
+/* ==========================================
+   YOSKANA — NEW SERVICES HERO
+========================================== */
+
+.services-hero-green {
+    background: linear-gradient( 110deg, #fffdf9 0%, #faf5ed 55%, #f0eee5 100% );
+    overflow: hidden;
+}
+
+    .services-hero-green .services-hero-grid {
+        display: grid;
+        grid-template-columns: 48% 52%;
+        min-height: 500px;
+        align-items: stretch;
+    }
+
+    .services-hero-green .services-hero-copy {
+        padding: 65px 35px 65px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .services-hero-green .eyebrow {
+        color: #2F5942;
+        letter-spacing: 0.18em;
+    }
+
+    .services-hero-green h1 {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(3.5rem, 5.6vw, 5.7rem);
+        font-weight: 500;
+        line-height: 1.04;
+        letter-spacing: -0.045em;
+        color: #17281e;
+        margin: 20px 0 24px;
+    }
+
+.hero-green-highlight {
+    color: #2F5942;
+}
+
+.services-hero-green .services-hero-copy p {
+    max-width: 440px;
+    color: #657168;
+    line-height: 1.75;
+    margin-bottom: 28px;
+}
+
+.services-hero-green .services-hero-image {
+    position: relative;
+    min-height: 500px;
+    border-radius: 0;
+    overflow: hidden;
+    clip-path: polygon( 17% 0, 100% 0, 100% 100%, 0 100% );
+}
+
+    .services-hero-green .services-hero-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+/* TABLET */
+@media (max-width: 900px) {
+    .services-hero-green .services-hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services-hero-green .services-hero-copy {
+        padding: 65px 0 35px;
+    }
+
+    .services-hero-green .services-hero-image {
+        min-height: 380px;
+        clip-path: none;
+        border-radius: 20px 20px 0 0;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 650px) {
+    .services-hero-green h1 {
+        font-size: clamp(2.8rem, 10vw, 4rem);
+    }
+
+    .services-hero-green .services-hero-copy {
+        padding: 45px 0 30px;
+    }
+
+    .services-hero-green .services-hero-image {
+        min-height: 300px;
+    }
+}
+/* Treatment section separators */
+
+.services-treatment-section .treatment-row {
+    border-bottom: 1px solid #dce6dc;
+}
+
+    .services-treatment-section .treatment-row:last-child {
+        border-bottom: none;
+    }
+
+
+/* ======================================
+   YOSKANA SERVICES — REFINEMENTS
+====================================== */
+
+/* Treatment heading */
+.treatment-content h2 {
+    font-size: clamp(2.2rem, 3.5vw, 3.7rem);
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+}
+
+/* Treatment details */
+.treatment-details {
+    grid-template-columns: 1.35fr 1fr 1fr;
+    gap: 12px;
+}
+
+.treatment-detail {
+    min-width: 0;
+}
+
+    .treatment-detail span,
+    .treatment-detail p,
+    .treatment-detail li {
+        overflow-wrap: normal;
+        word-break: normal;
+    }
+
+/* Green branding */
+.treatment-kicker,
+.treatment-text-link {
+    color: #2F5942;
+}
+
+.treatment-actions .btn-primary {
+    background: #2F5942;
+    border-color: #2F5942;
+    color: #fff;
+}
+
+    .treatment-actions .btn-primary:hover {
+        background: #244735;
+        border-color: #244735;
+    }
+
+.treatment-number {
+    color: #2F5942;
+}
+
+.treatment-detail .detail-icon {
+    color: #2F5942;
+    border-color: #dce6dc;
+}
+
+/* Responsive treatment details */
+@media (max-width: 650px) {
+    .treatment-details {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+/* Services links — green theme */
+
+.services-treatment-section .treatment-text-link {
+    color: #2F5942;
+    text-decoration-color: #2F5942;
+}
+
+    .services-treatment-section .treatment-text-link:hover {
+        color: #244735;
+        text-decoration-color: #244735;
+    }
+
+
+/* ==========================================
+   YOSKANA — SERVICE CATEGORY HEADINGS
+========================================== */
+
+.services-category-heading {
+    padding: 45px 0 30px;
+    border-bottom: 1px solid #dce6dc;
+}
+
+.services-category-label {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #2F5942;
+    margin-bottom: 16px;
+}
+
+.services-category-heading h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.2rem, 4vw, 3.8rem);
+    font-weight: 500;
+    line-height: 1.12;
+    letter-spacing: -0.035em;
+    color: #17281e;
+    max-width: 850px;
+    margin: 0 0 16px;
+}
+
+.services-category-heading p {
+    color: #657168;
+    font-size: 1rem;
+    line-height: 1.75;
+    max-width: 600px;
+    margin: 0;
+}
+
+@media (max-width: 650px) {
+    .services-category-heading {
+        padding: 30px 0 25px;
+    }
+
+        .services-category-heading h2 {
+            font-size: 2.2rem;
+        }
+}
+
+/* ==========================================
+   YOSKANA — HAIR & SCALP CARE SECTION
+========================================== */
+
+.hair-care-section {
+    padding-top: 35px;
+    padding-bottom: 55px;
+}
+
+.hair-category-heading {
+    border-top: 2px solid #2F5942;
+    border-bottom: 1px solid #dce6dc;
+    padding-top: 55px;
+    padding-bottom: 35px;
+}
+
+.hair-care-section .treatment-row:last-child {
+    border-bottom: none;
+}
+
+@media (max-width: 650px) {
+    .hair-care-section {
+        padding-top: 20px;
+        padding-bottom: 35px;
+    }
+
+    .hair-category-heading {
+        padding-top: 35px;
+        padding-bottom: 25px;
+    }
+}
+
+/* ==========================================
+   YOSKANA — TREATMENT NAVIGATION
+========================================== */
+
+.treatment-focus-options a {
+    color: #2F5942;
+    border-color: #dce6dc;
+    transition: all 0.25s ease;
+}
+
+    .treatment-focus-options a:hover {
+        background: #2F5942;
+        border-color: #2F5942;
+        color: #ffffff;
+        transform: translateY(-3px);
+    }
+
+        .treatment-focus-options a:hover span {
+            color: #ffffff;
+        }
+
+#hair-care,
+#skin-treatments {
+    scroll-margin-top: 110px;
+}
+
+/* ==========================================
+   YOSKANA — CONSULTATION CARD BUTTON
+========================================== */
+
+.services-consultation-card .btn-primary {
+    background: #2F5942;
+    border-color: #2F5942;
+    color: #ffffff;
+}
+
+    .services-consultation-card .btn-primary:hover {
+        background: #244735;
+        border-color: #244735;
+        color: #ffffff;
+    }
+
+/* ==========================================
+   YOSKANA — SERVICES HERO BUTTON
+========================================== */
+
+.services-hero-green .btn-primary {
+    background: #2F5942;
+    border-color: #2F5942;
+    color: #ffffff;
+}
+
+    .services-hero-green .btn-primary:hover {
+        background: #244735;
+        border-color: #244735;
+        color: #ffffff;
+    }
+
+/* ==========================================
+   YOSKANA — GREEN FOOTER
+========================================== */
+
+.site-footer {
+    background: #203D2F;
+    color: #ffffff;
+}
+
+    .site-footer .logo,
+    .site-footer h4 {
+        color: #ffffff;
+    }
+
+    .site-footer p,
+    .site-footer .footer-links a,
+    .site-footer .footer-bottom {
+        color: #e2eee5;
+    }
+
+        .site-footer .footer-links a:hover {
+            color: #ffffff;
+        }
+
+    .site-footer .footer-bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+/* ==========================================
+   YOSKANA — ASK A QUESTION LINK
+========================================== */
+
+.services-treatment-section .treatment-text-link {
+    color: #2F5942;
+    text-decoration-color: #2F5942;
+    border-bottom-color: #2F5942;
+}
+
+    .services-treatment-section .treatment-text-link:hover {
+        color: #244735;
+        text-decoration-color: #244735;
+        border-bottom-color: #244735;
+    }
+/* ==========================================
+   HOME PAGE — FOOTER CONTACT INFORMATION
+========================================== */
+
+.site-footer .footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.site-footer .footer-contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #E2EEE5;
+    font-size: 13px;
+    line-height: 1.6;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.site-footer a.footer-contact-item:hover {
+    color: #ffffff;
+}
+
+.site-footer .footer-contact-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 18px;
+    color: #C7D8CA;
+    font-size: 17px;
+    line-height: 1.3;
+}
+
+/* Small screens */
+@media (max-width: 600px) {
+    .site-footer .footer-contact {
+        gap: 10px;
+        margin-top: 18px;
+    }
+
+    .site-footer .footer-contact-item {
+        font-size: 12px;
+    }
+}
+
+/* ==========================================
+   SERVICES PAGE — TREATMENT FOCUS HEADING
+========================================== */
+
+.treatment-focus-section .section-kicker {
+    color: #2F5942;
+}
+
+/* ==========================================
+   SERVICES PAGE — GREEN CHECKMARKS
+========================================== */
+
+.services-treatment-section .treatment-detail li::before {
+    color: #2F5942;
+}
+
+/* ==========================================
+   SERVICES PAGE — YOSKANA EXPERIENCE
+========================================== */
+
+.services-experience-section .section-kicker {
+    color: #2F5942;
+}
+
+/* ==========================================
+   SERVICES PAGE — FAQ HEADING COLOR
+========================================== */
+
+.services-faq-section .section-kicker {
+    color: #2F5942;
 }

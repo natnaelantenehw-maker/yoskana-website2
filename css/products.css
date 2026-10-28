@@ -1,0 +1,19 @@
+
+/* ==========================================
+   YOSKANA — PRODUCTS PAGE STYLES
+========================================== */
+
+/* PRODUCTS HERO — COMING SOON LABEL */
+.page-hero .eyebrow {
+    color: #2F5942;
+}
+
+/* PRODUCTS — LAUNCHING BADGE TEXT */
+.future-banner .future-badge {
+    color: #2F5942;
+}
+
+/* PRODUCTS — ACTIVE NAVIGATION */
+.nav-links a.active:not(.nav-cta) {
+    color: #2F5942;
+}

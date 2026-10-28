@@ -1,0 +1,84 @@
+/* ==========================================
+   YOSKANA — RESULTS PAGE STYLES
+   File: css/results.css
+========================================== */
+
+/* ==========================================
+   YOSKANA RESULTS PAGE
+   GREEN BRAND ACCENTS
+========================================== */
+
+/* Before & After heading */
+.page-hero .eyebrow {
+    color: #2F5942;
+}
+
+/* Client Love heading */
+.reviews-section .section-kicker {
+    color: #2F5942;
+}
+
+/* Review quotation marks */
+.reviews-section .review-quote {
+    color: #2F5942;
+}
+
+/* Five-star ratings */
+.reviews-section .review-stars,
+.reviews-section .review-summary-stars {
+    color: #2F5942;
+}
+
+/* Client review carousel arrows */
+.reviews-section .review-arrow {
+    color: #2F5942;
+}
+
+    .reviews-section .review-arrow:hover {
+        color: #203D2F;
+    }
+
+/* Review summary rating */
+.reviews-section .review-summary-rating strong {
+    color: #2F5942;
+}
+
+/* Review section labels */
+.reviews-section .review-person span {
+    color: #2F5942;
+}
+
+/* Booking section small heading */
+.review-cta .eyebrow {
+    color: #2F5942;
+}
+
+/* Booking button */
+.review-cta .btn-primary {
+    background: #2F5942;
+    border-color: #2F5942;
+    color: #ffffff;
+}
+
+    .review-cta .btn-primary:hover {
+        background: #203D2F;
+        border-color: #203D2F;
+        color: #ffffff;
+    }
+
+/* Before / After labels */
+.results-grid .image-tag {
+    color: #2F5942;
+}
+
+/* ==========================================
+   RESULTS PAGE — ACTIVE NAVIGATION
+========================================== */
+
+
+/* RESULTS PAGE — ACTIVE NAVIGATION */
+
+.nav-links a.active:not(.nav-cta) {
+    color: #2F5942;
+}
+
